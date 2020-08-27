@@ -1,0 +1,380 @@
+/*https://app.acuityscheduling.com/schedule.php?owner=19358417&action=meet&apptID=426813160&meetID=1eb8d37edd2d03b9ef979caa1c69504c*/
+
+@font-face {
+    font-family: 'jura';
+    src: url('../fonts/Jura/Jura-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+:root {
+    --ocean-white: #F3F5F3;
+    --ocean-half-baked: #80B0D0;
+    --ocean-blue: #318AF2;
+    --ocean-skampi: #5B66A9;
+    --ocean-blue-black: #1D2B47;
+    --jura: 'Jura', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 2.4em;
+    font-family: var(--jura);
+    font-weight: 900;
+    letter-spacing: 0.06em;
+}
+
+p {
+    font-family: var(--roboto);
+    font-size: 0.85em;
+    letter-spacing: 0.03em;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    font-size: 18px;
+    position: fixed;
+    border: 3px solid var(--ocean-blue);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+header nav {
+    background-color: var(--ocean-white);
+    padding: none;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header .ocean-logo {
+    height: 100%;
+    width: auto;
+    margin-left: 5%;
+}
+
+header ul {
+    list-style-type: none;
+    display: inline;
+    align-self: center;
+    margin: 0;
+    margin-right: 5%;
+}
+
+header ul li {
+    display: inline;
+}
+
+header li a {
+    text-decoration: none;
+    color: var(--ocean-blue-black);
+    font-family: var(--jura);
+    font-weight: 900;
+    font-size: 0.8em;
+    padding: 1em 1.2em;
+}
+
+.ocean-logo img {
+    height: 100%;
+    width: auto;
+}
+
+.section {
+    font-size: 0.85em;
+}
+
+.ocean-container {
+    margin: 0;
+    height: calc(100vh - 100px);
+    width: auto;
+    font-size: 16px;
+}
+
+.ocean-home-hero {
+    background-image: url("../images/ocean-background.png");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ocean-home-hero .ocean-location-search {
+    display: flex;
+    height: 42px;
+    width: 42%;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.ocean-location-search i {
+    flex-grow: 1;
+    background-color: var(--ocean-white);
+    border-radius: 10px 0 0 10px;
+    color: var(--ocean-blue-black);
+    text-align: center;
+    padding: .2em 0;
+}
+
+.ocean-home-hero h1, .ocean-home-hero p {
+    color: var(--ocean-white);
+}
+
+.ocean-home-hero input[type="text"] {
+    flex-grow: 10;
+    background-color: var(--ocean-white);
+    border-radius: 0 10px 10px 0;
+    border: none;
+    font-family: var(--roboto);
+    font-size: 1.2em;
+    color: var(--ocean-blue-black);
+    padding: 10px 0;
+}
+
+.ocean-home-hero input[type="text"]:focus {
+    outline-width: 0;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: stretch;
+}
+
+.ocean-row-fill {
+    height: 100%;
+}
+
+.ocean-row-space {
+    justify-content: space-evenly;
+}
+
+.ocean-button-group {
+    height: 40px;
+}
+
+.ocean-container article {
+    background-color: var(--ocean-white);
+    height: 100%;
+    width: 50%;
+    flex-grow: 1;
+    box-sizing: border-box;
+    padding: 6em;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    text-align: left;
+}
+
+.ocean-container article h1 {
+    margin: 0;
+}
+
+.ocean-container .ocean-side-image {
+    height: 100%;
+    width: 50%;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.ocean-side-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.ocean-home-display {
+    background-color: var(--ocean-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 6em;
+}
+
+.ocean-home-display h1 {
+    font-size: 2vw;
+    margin-bottom: 0;
+}
+
+.ocean-home-display h2 {
+    font-family: var(--jura);
+    font-size: 1vw;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.ocean-home-display .ocean-service-card {
+    height: 30vh;
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ocean-service-card img {
+    height: 40%;
+    width: 25%;
+    border-radius: 50%;
+}
+
+.ocean-sentimental {
+    height: 150vh;
+    width: 100%;
+}
+
+.ocean-container .ocean-testimonial {
+    height: 33.33%;
+    width: 100%;
+    background-color: var(--ocean-blue);
+    color: var(--ocean-blue-black);
+    font-family: var(--jura);
+}
+
+.ocean-testimonial blockquote {
+    font-size: 1.2em;
+    font-weight: 900;
+    font-family: var(--jura);
+    quotes: "\201C""\201E""\2018""\2019";
+    padding: 10px 20px;
+    line-height: 1.4;
+}
+
+.ocean-testimonial blockquote:before {
+    display: inline;
+    content: open-quote;
+    font-family: var(--roboto);
+    font-size: 3em;
+    color: var(--ocean-half-baked);
+    position: relative;
+    top: 30px;
+    line-height: 0;
+}
+
+.ocean-testimonial blockquote:after {
+    display: inline;
+    content: close-quote;
+    font-family: var(--roboto);
+    font-size: 3em;
+    color: var(--ocean-half-baked);
+    left: -10px;
+    line-height: 0;
+}
+
+.ocean-testimonial span {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: right;
+    margin-right: 5%;
+}
+
+.ocean-testimonial span:before {
+    content: "-";
+}
+
+.ocean-sentimental .ocean-commitment {
+    width: 100%;
+    height: 66.66%;
+    background: url("../images/ocean-6.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--ocean-white);
+}
+
+.ocean-commitment h1 {
+    font-size: 3em;
+}
+
+.ocean-commitment p {
+    font-size: 1.5em;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-color: var(--ocean-blue-black);
+    font-size: 16px;
+    font-family: var(--jura);
+    color: var(--ocean-white);
+    position: relative;
+    top: -1px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul a,
+footer ul li{
+    text-decoration: none;
+    color: var(--ocean-white);
+    font-size: 1vw;
+    line-height: 170%;
+}
+
+footer .row {
+    justify-content: space-around;
+    width: 70%;
+}
+
+footer article {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+
+    align-items: center;
+    justify-content: flex-start;
+}
+
+footer article h1 {
+    text-align: center;
+    font-size: 2vw;
+}
+
+.ocean-button {
+    height: 40px;
+    padding: 0.5em 1.5rem;
+    margin-right: 1em;
+    background-color: var(--ocean-blue);
+    color: var(--ocean-white);
+    font-size: 0.85em;
+    font-family: var(--jura);
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+}
+
+.ocean-button-inverted {
+    box-sizing: border-box;
+    height: 40px;
+    padding: 0.5em 1.5rem;
+    margin-right: 1em;
+    background-color: var(--ocean-white);
+    color: var(--ocean-blue);
+    font-size: 0.85em;
+    font-family: var(--jura);
+    text-align: center;
+    border: 1px solid var(--ocean-blue);
+    border-radius: 6px;
+}
