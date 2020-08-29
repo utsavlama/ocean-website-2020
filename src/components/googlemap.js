@@ -12,7 +12,7 @@ export default class GoogleMap extends React.Component {
         let map;
 
         function initMap() {
-            map = new google.maps.Map(document.getElementById("map"), {
+            map = new window.google.maps.Map(document.getElementById("map"), {
                 center: {
                     lat: -34.397,
                     lng: 150.644
@@ -24,11 +24,15 @@ export default class GoogleMap extends React.Component {
 
     render() {
         return (
-            <div className="map" id="map">
+            <div>
 
                 <Helmet>
-                    <script src="https://maps.googleapis.com/maps/api/js?key=MY_KEY&callback=initMap" async defer />
+                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArFkyAHQ6-NFYcnNgn6lkm03npO_0JAPA&callback=initMap"
+                        type="text/javascript"></script>
                 </Helmet>
+                <div className="map" id="map">
+
+                </div>
             </div>
         );
     }
