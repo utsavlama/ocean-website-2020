@@ -1,8 +1,8 @@
 var plugins = [{
-      plugin: require('C:/Users/Work/Desktop/ocean/ocean-website-2020/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('C:/Users/lama_/Desktop/ocean/ocean-website-2020/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('C:/Users/Work/Desktop/ocean/ocean-website-2020/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      plugin: require('C:/Users/lama_/Desktop/ocean/ocean-website-2020/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"ocean website 2020","short_name":"starter","start_url":"/","background_color":"#318AF2","theme_color":"#318AF2","display":"minimal-ui","icon":"src/images/Ocean-Logo-HR-copy.png","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":"87c243e33e090cf523ae45f18469ac18"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:

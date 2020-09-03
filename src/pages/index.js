@@ -8,6 +8,7 @@ import Button from "../components/button";
 import GoogleMap from "../components/googlemap";
 import '../utils/fontawesome';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {Helmet} from 'react-helmet';
 
 const IndexPage = () => (
   <Layout>
@@ -36,7 +37,7 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section className="ocean-container">
+    <section className="ocean-container ocean-maps-container">
       <GoogleMap />
     </section>
 
